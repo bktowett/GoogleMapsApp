@@ -1,18 +1,16 @@
-<FrameLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
 
     <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        xmlns:tools="https://schemas.android.com/tools"
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        xmlns:map="https://schemas.android.com/apk/res-auto"
-        xmlns:tools="https://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:context="com.example.nombu.googlemapsapp.MapsActivity"/>
 
-    <LinearLayout xmlns:android="https://schemas.android.com/apk/res/android"
-        xmlns:tools="https://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -21,19 +19,19 @@
             android:id="@+id/btnRestaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nearby Restaurants" />
+            android:text="Nearby Restaurants"/>
 
         <Button
             android:id="@+id/btnHospital"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nearby Hospitals" />
+            android:text="Nearby Hospitals"/>
 
         <Button
             android:id="@+id/btnSchool"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nearby Schools" />
+            android:text="Nearby Schools"/>
     </LinearLayout>
 
 </FrameLayout>
